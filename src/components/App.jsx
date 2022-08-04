@@ -1,4 +1,4 @@
-import { Component, useState } from 'react';
+import { useState } from 'react';
 import Section from './Section/Section';
 import Statistics from './Statistics/Statistics';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
@@ -27,6 +27,8 @@ export const App = () => {
       case 'bad':
         setBad(prev => prev + 1);
         break;
+      default:
+        console.log('default case');
     }
   };
 
